@@ -1,0 +1,29 @@
+#  id                      :integer          not null, primary key
+#  language                :string
+#  title                   :string
+#  first_name              :string
+#  middle_name             :string
+#  last_name               :string
+#  pa_notes                :string
+#  deleted_at              :datetime
+#  gender                  :integer
+#  dob                     :datetime
+#  user_id                 :integer
+#  created_at              :datetime         not null
+#  updated_at              :datetime         not null
+#  readable_id             :string           not null
+#  last_communication_type :string
+#  last_communication_id   :integer
+#  last_communicated_at    :datetime
+#  org_id                  :integer          not null
+#  ext_ids                 :jsonb
+#  extra_fields            :jsonb
+#  has_duplicates          :boolean          default(FALSE)
+#  not_duplicate_ids       :jsonb
+#  last_merged_on          :datetime         default(Thu, 01 Jan 1970
+00:00:00 UTC +00:00)
+#  owner_id                :integer
+#  archival_reason         :string
+#  archival_description    :string
+#  archived_by             :integer
+#  status                  :string

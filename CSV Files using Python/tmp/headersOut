@@ -1,0 +1,2 @@
+id,language,title,first_name,middle_name,last_name,pa_notes,deleted_at,gender,dob,user_id,created_at,updated_at,readable_id,last_communication_type,last_communication_id,last_communicated_at,org_id,ext_ids,extra_fields,has_duplicates,not_duplicate_ids,last_merged_on,+00:00)
+,owner_id,archival_reason,archival_description,archived_by,status,
