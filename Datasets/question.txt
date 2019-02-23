@@ -1,0 +1,35 @@
+E-commerce platform has multiple merchants (merchant table) and customers (customer table) registered on their website. To increase their merchant and customer base, coupons (coupon table) are give to merchants to share with their customers and customers directly by the e-commerce platform.
+
+Following is schema.
+
+merchant:
+  id
+  name: name of the merchant
+
+customer:
+  id
+  name: name of the customer
+
+coupon:
+  id
+  name: coupon code
+  discount: discount value for the code
+
+sale:
+  id
+  merchant_id: merchant.id
+  customer_id: customer id
+  coupon_id: coupon id
+  bill_amount: amount of the transaction
+  ts: time stamp of the sale
+
+
+Cost to the e-commerce platform for coupon: For the given sale transaction, on bill_amount, customer get the discount of corresponding coupon. Max discount is 300.
+
+From the available data, find out following.
+- Top 10 customers who spent maximum amount (consider discounted price) in month of March.
+- Top 20 merchants with maximum turnover (complete data) on the e-commerce platform
+- Top 10 coupons with maximum utilization
+- Top 3 coupons which were utilized in each month
+- Top 50 coupons for which e-commerce platform gave discount in terms of money spent.
+- Plot graph for number of coupons used in each month

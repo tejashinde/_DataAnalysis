@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+        <h1>Elements</h1>
+        <ul class = "list-group">
+            {% for element in elements %}
+                  <li class = "list-group-item">
+                        <a href = "minersys/{{element.id}}">
+                            {{element.name}}
+                        </a>
+                  </li>
+            {% endfor %}
+        </ul>
+{% endblock %}
